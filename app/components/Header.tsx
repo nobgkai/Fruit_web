@@ -44,9 +44,9 @@ export default function Header({ solid = false }: { solid?: boolean }) {
             priority
             className="h-12 w-12 shrink-0 object-contain transition-transform group-hover:scale-105"
           />
-          <div className="hidden sm:block">
+          <div className="min-w-0">
             <p
-              className={`font-bold text-lg leading-tight transition-colors ${
+              className={`whitespace-nowrap font-bold text-sm leading-tight transition-colors sm:text-lg ${
                 scrolled || solid ? "text-[#b91c1c]" : "text-white"
               }`}
               style={{ fontFamily: "var(--font-playfair)" }}
@@ -54,7 +54,7 @@ export default function Header({ solid = false }: { solid?: boolean }) {
               บุปผาชาติ
             </p>
             <p
-              className={`text-xs transition-colors ${
+              className={`whitespace-nowrap text-[10px] leading-tight transition-colors sm:text-xs ${
                 scrolled || solid ? "text-[#7f1d1d]" : "text-white/80"
               }`}
             >
